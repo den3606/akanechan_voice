@@ -1,0 +1,7 @@
+<Mod
+	name="akanechan_voice_alfa_0.0.1"
+  tags="audio"
+  dont_upload_folders="resources"
+  dont_upload_files=".editorconfig"
+>
+</Mod>
