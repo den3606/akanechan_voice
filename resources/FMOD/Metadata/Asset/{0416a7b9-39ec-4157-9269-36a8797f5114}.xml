@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="EncodableAsset" id="{7532d7b9-1911-4e06-a48a-bc7a9aec7f22}">
+	<object class="EncodableAsset" id="{0416a7b9-39ec-4157-9269-36a8797f5114}">
 		<property name="assetPath">
-			<value>player/spawn/</value>
+			<value>player/pcikup/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{eb2a4d4a-1287-481b-8086-c8771a725107}</destination>

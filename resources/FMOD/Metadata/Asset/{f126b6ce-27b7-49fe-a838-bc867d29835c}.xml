@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="EncodableAsset" id="{7532d7b9-1911-4e06-a48a-bc7a9aec7f22}">
+	<object class="EncodableAsset" id="{f126b6ce-27b7-49fe-a838-bc867d29835c}">
 		<property name="assetPath">
-			<value>player/spawn/</value>
+			<value>enemy/pickup/wand/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{eb2a4d4a-1287-481b-8086-c8771a725107}</destination>

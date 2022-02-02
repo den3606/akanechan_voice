@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{d574b443-308b-46ed-b8b1-7523f4d766e2}">
+	<object class="AudioFile" id="{df93381a-61cf-44ac-a558-dfa3641e0d2d}">
 		<property name="assetPath">
-			<value>player/small_damage/20220125050717_琴葉 茜_うっ-0.wav</value>
+			<value>player/kick/20220203072108_琴葉 茜[嬉しい大]_おらああああ.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.83517006802721083</value>
+			<value>1.3501360544217686</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{eb2a4d4a-1287-481b-8086-c8771a725107}</destination>

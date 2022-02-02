@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{d574b443-308b-46ed-b8b1-7523f4d766e2}">
+	<object class="AudioFile" id="{be5054ac-0efb-4e22-b5a1-2c2bc4327637}">
 		<property name="assetPath">
-			<value>player/small_damage/20220125050717_琴葉 茜_うっ-0.wav</value>
+			<value>enemy/pickup/wand/20220203064719_琴葉 茜[嬉しい大]_何しとるん、杖取られとるやん-.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.83517006802721083</value>
+			<value>2.8756462585034015</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{eb2a4d4a-1287-481b-8086-c8771a725107}</destination>

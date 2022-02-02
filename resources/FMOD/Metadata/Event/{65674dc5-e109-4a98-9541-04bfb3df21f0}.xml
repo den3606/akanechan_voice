@@ -8,7 +8,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{5cf15d2c-9818-4ead-91dd-a053df660840}</destination>
+			<destination>{73dd73df-7a60-497f-93be-fc6633708e9a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{06d18b1a-a19a-4204-bf06-8db4f23676b1}</destination>
@@ -162,10 +162,10 @@
 	<object class="MixerBusPanner" id="{d6b5ac72-5199-4f9b-a56e-9f4a1bb2589b}" />
 	<object class="SpatialiserEffect" id="{77e3636f-7e46-47ff-8242-8271ab238842}">
 		<property name="minimumDistance">
-			<value>10000</value>
+			<value>500</value>
 		</property>
 		<property name="maximumDistance">
-			<value>10000</value>
+			<value>1000</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{92e9854e-c946-4e7e-9723-e7536f8ba4a2}" />
