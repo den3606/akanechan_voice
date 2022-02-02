@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{2cafcacb-d9a6-419b-83a8-a7878d4f6f2b}">
 		<property name="assetPath">
-			<value>spawn/20220125045933_琴葉 茜_またnoitaやるんか、一緒に頑張ろうな-0.wav</value>
+			<value>player/spawn/20220125045933_琴葉 茜_またnoitaやるんか、一緒に頑張ろうな-0.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

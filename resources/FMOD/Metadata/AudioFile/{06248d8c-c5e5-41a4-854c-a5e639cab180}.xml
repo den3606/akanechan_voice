@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{06248d8c-c5e5-41a4-854c-a5e639cab180}">
 		<property name="assetPath">
-			<value>big_damage/20220125050628_琴葉 茜_ううっ-0.wav</value>
+			<value>player/big_damage/20220125050628_琴葉 茜_ううっ-0.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

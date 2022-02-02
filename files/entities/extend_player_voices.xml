@@ -5,7 +5,6 @@
     audio_physics_material="character_player"
     set_latest_event_position="1"
   ></AudioComponent>
-
   <LuaComponent
     execute_on_added="1"
     execute_every_n_frame="-1"
@@ -16,8 +15,11 @@
   <LuaComponent
     script_damage_received="mods/akanechan_voice/files/scripts/player/damage_received.lua" >
   </LuaComponent>
-</Entity>
 
+  <LuaComponent
+    script_kick="mods/akanechan_voice/files/scripts/player/kick.lua">
+  </LuaComponent>
+</Entity>
 <!-- メモ -->
 <!--
     std::string             script_source_file                                              -                               ""

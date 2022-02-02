@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{d8439949-932b-4144-9566-038a3a52d0bd}">
 		<property name="assetPath">
-			<value>spawn/20220127011215_琴葉 茜_おはようちゃん、おねえちゃんやで。今回も頑張ってこーか-0.wav</value>
+			<value>player/spawn/20220127011215_琴葉 茜_おはようちゃん、おねえちゃんやで。今回も頑張ってこーか-0.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

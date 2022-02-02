@@ -15,10 +15,13 @@
 {9e5f6674-ecca-4cb3-9e39-050604be24e9} bus:/music_reverb
 {8340afee-1bfb-481c-8b65-a1721703356c} bus:/reverb
 {40bdfd79-5dfd-4303-8a71-0792c637c380} bus:/ui
-{39fd5b19-b7ac-469e-8862-baf88373cd64} event:/akanechan/dead
-{ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/spawn
-{65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/take_big_damage
-{c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/take_small_damage
+{8e7396ac-11b0-43ab-9dfc-89dd2bba45eb} event:/akanechan/enemy/pickup/wand
+{39fd5b19-b7ac-469e-8862-baf88373cd64} event:/akanechan/player/dead
+{784a8eb4-d6d3-41cf-a997-8ecaa6251dab} event:/akanechan/player/kick
+{5f3332d1-3750-45b2-9fd2-b64f5b2f3498} event:/akanechan/player/pickup/wand
+{ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/player/spawn
+{65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_big_damage
+{c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/player/take_small_damage
 {2f99f806-4b51-4b0a-a879-566644591f29} parameter:/Migration Name Conflict (3)/lowpass
 {ddf75d16-bdbe-4460-908b-0a29bd483835} parameter:/lowpass
 {dadeda7a-c13b-484b-929e-d3c513e7173b} snapshot:/cave
