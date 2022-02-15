@@ -4,7 +4,7 @@ dofile_once("mods/akanechan_voice/files/scripts/lib/wait_frame.lua")
 
 local function playDamageSound(player_entity_id, damage)
 
-  if damage < 20 then
+  if damage < 0.8 then
     GameEntityPlaySound( player_entity_id, "player/take_small_damage" )
   else
     GameEntityPlaySound( player_entity_id, "player/take_big_damage" )
@@ -16,7 +16,6 @@ end
 --------------
 function damage_received( damage, desc, entity_who_caused, is_fatal )
   local player_entity_id = GetUpdatedEntityID()
-
   if is_fatal then
     GameEntityPlaySound( player_entity_id, "player/dead" )
   else
@@ -25,7 +24,6 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
     end)
   end
 end
-
 
 
 -- function damage_received( damage, desc, entity_who_caused, is_fatal )
