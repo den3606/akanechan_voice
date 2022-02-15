@@ -22,6 +22,8 @@
 {ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/player/spawn
 {65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_big_damage
 {c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/player/take_small_damage
+{009538f3-683f-4283-a99a-dec498be1de6} event:/akanechan/player/throw/emerald_tablet
+{83676808-695d-45fd-92e3-c3b3e85f85eb} event:/akanechan/player/throw/something
 {2f99f806-4b51-4b0a-a879-566644591f29} parameter:/Migration Name Conflict (3)/lowpass
 {ddf75d16-bdbe-4460-908b-0a29bd483835} parameter:/lowpass
 {dadeda7a-c13b-484b-929e-d3c513e7173b} snapshot:/cave
