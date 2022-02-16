@@ -5,5 +5,8 @@ GLOBAL_PREFIXES = {
   end,
   damage_received = function(self)
     return self.prefix .. "damage_received"
+  end,
+  fire_damage_received = function(self)
+    return self.prefix .. "fire_damage_received"
   end
 }
