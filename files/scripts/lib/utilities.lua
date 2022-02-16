@@ -5,3 +5,8 @@ dofile_once("mods/akanechan_voice/files/scripts/lib/utils/calculate.lua")
 
 -- has dependent
 dofile_once("mods/akanechan_voice/files/scripts/lib/utils/wait_frame.lua")
+
+
+function p(message)
+  print(tostring(message))
+end
