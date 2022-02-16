@@ -1,6 +1,4 @@
 dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
-dofile_once("mods/akanechan_voice/files/scripts/lib/global_prefixes.lua")
-dofile_once("mods/akanechan_voice/files/scripts/lib/wait_frame.lua")
 
 function throw_item(from_x, from_y, to_x, to_y)
   local player_pos_x, player_pos_y = EntityGetTransform(getPlayerEntity())

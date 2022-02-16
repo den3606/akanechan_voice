@@ -1,5 +1,3 @@
-dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
-
 WaitFrame = {
   SUFFIXES = {
     wait_frame="wait_frame",
