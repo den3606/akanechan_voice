@@ -1,5 +1,3 @@
-dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
-
 WaitFrame = {
   SUFFIXES = {
     wait_frame="wait_frame",
@@ -33,6 +31,13 @@ WaitFrame = {
       addNewInternalVariable(entity_id, variable_name .. self.SUFFIXES["wait_frame"], "value_int", wait_frame)
       addNewInternalVariable(entity_id, variable_name .. self.SUFFIXES["register_frame"], "value_int", register_frame)
     end
+  end,
+
+  updateWaitFrame = function(self, entity_id, variable_name, wait_frame)
+    local current_frame = GameGetFrameNum()
+    local register_frame = current_frame
+    addNewInternalVariable(entity_id, variable_name .. self.SUFFIXES["wait_frame"], "value_int", wait_frame)
+    addNewInternalVariable(entity_id, variable_name .. self.SUFFIXES["register_frame"], "value_int", register_frame)
   end,
 
   registered = function(self, entity_id, variable_name)
