@@ -11,13 +11,20 @@ end
 -- main
 --------------
 function item_pickup(item_entity_id, pickupper_entity_id, item_name)
+  print("pickup wand")
   local player_entity_id = getPlayerEntity()
+
+
+  local is_swapped_wand = getInternalVariableValue(player_entity_id, AKANECHAN:IS_THROWED_WAND(), "value_bool")
+  print("is_swapped_wand: " .. tostring(is_swapped_wand))
+  if is_swapped_wand then return end
+
   if player_entity_id == pickupper_entity_id then
-    WaitFrame:tryCall(player_entity_id, GLOBAL_PREFIXES:item_pickup(), function()
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_WAND(), function()
       playPlayerPickupSound(player_entity_id)
     end, 600)
   else
-    WaitFrame:tryCall(player_entity_id, GLOBAL_PREFIXES:item_pickup(), function()
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_WAND(), function()
       playEnemyPickupSound(player_entity_id)
     end, 600)
   end

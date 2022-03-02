@@ -8,6 +8,7 @@
     "spawn_revival_altar",
     "release",
     "init",
-    "damage_received"
+    "damage_received",
+    "endOfThrowingTime"
   ]
 }

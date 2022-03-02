@@ -5,13 +5,13 @@ local BIG_DAMAGE = 0.8 -- 20
 local function playDamageSound(player_entity_id, damage)
 
   if damage < BIG_DAMAGE then
-    WaitFrame:tryCall(player_entity_id, GLOBAL_PREFIXES:damage_received(), function()
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
       GameEntityPlaySound(player_entity_id, "player/take_small_damage")
     end)
   else
     -- 大ダメージのときは強制実行する
-    WaitFrame:updateWaitFrame(player_entity_id, GLOBAL_PREFIXES:damage_received(), -1)
-    WaitFrame:tryCall(player_entity_id, GLOBAL_PREFIXES:damage_received(), function()
+    WaitFrame:updateWaitFrame(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), -1)
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
       GameEntityPlaySound(player_entity_id, "player/take_big_damage")
     end)
   end
@@ -19,11 +19,11 @@ local function playDamageSound(player_entity_id, damage)
 end
 
 local function playFireDamageSound(player_entity_id)
-  WaitFrame:tryCall(player_entity_id, GLOBAL_PREFIXES:fire_damage_received(), function()
+  WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_FIRE_DAMAGE(), function()
     GameEntityPlaySound(player_entity_id, "player/take_fire_damage")
   end, 60 * 3)
-  WaitFrame:updateWaitFrame(player_entity_id, GLOBAL_PREFIXES:fire_damage_received(), 60 * 3)
-  WaitFrame:updateWaitFrame(player_entity_id, GLOBAL_PREFIXES:damage_received(), 60 * 2)
+  WaitFrame:updateWaitFrame(player_entity_id, AKANECHAN:RECEIVED_FIRE_DAMAGE(), 60 * 3)
+  WaitFrame:updateWaitFrame(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), 60 * 2)
 end
 
 --------------
