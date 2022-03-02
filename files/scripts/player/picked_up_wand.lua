@@ -17,11 +17,11 @@ function item_pickup(item_entity_id, pickupper_entity_id, item_name)
   if is_swapped_wand then return end
 
   if player_entity_id == pickupper_entity_id then
-    WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_ITEM(), function()
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_WAND(), function()
       playPlayerPickupSound(player_entity_id)
     end, 600)
   else
-    WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_ITEM(), function()
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_WAND(), function()
       playEnemyPickupSound(player_entity_id)
     end, 600)
   end
