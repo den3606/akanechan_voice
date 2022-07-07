@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{c268b8e7-0182-4a36-9315-db5d7fc46136}">
 		<property name="name">
-			<value>take_small_damage</value>
+			<value>mild</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{73dd73df-7a60-497f-93be-fc6633708e9a}</destination>
+			<destination>{763b5002-35f8-49f0-a708-6a0ff4f9151c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{5e08dde1-0785-4c1a-b9f0-d0ed1884bc81}</destination>
@@ -106,7 +106,6 @@
 		<relationship name="sounds">
 			<destination>{c9292e88-fc67-4375-89a5-405983c7339d}</destination>
 			<destination>{94705b7c-b519-4561-ad6e-15b1e894f760}</destination>
-			<destination>{43a341e8-349f-4b53-88d9-1de9295c4f66}</destination>
 			<destination>{b7369f47-1272-48c9-8086-13a95de9e448}</destination>
 			<destination>{f9329ad1-f5ad-40a7-922b-aba7dc3b20a9}</destination>
 		</relationship>
@@ -116,7 +115,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{5b6fefe8-6f15-49a7-ac68-d371a31893bd}">
 		<property name="volume">
-			<value>-8</value>
+			<value>-17.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -155,11 +154,6 @@
 	<object class="SingleSound" id="{94705b7c-b519-4561-ad6e-15b1e894f760}">
 		<relationship name="audioFile">
 			<destination>{d4767204-7a9f-4cae-b7d0-03e49d17c36f}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{43a341e8-349f-4b53-88d9-1de9295c4f66}">
-		<relationship name="audioFile">
-			<destination>{d574b443-308b-46ed-b8b1-7523f4d766e2}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{b7369f47-1272-48c9-8086-13a95de9e448}">
