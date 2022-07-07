@@ -9,8 +9,6 @@ local function playDamageSound(player_entity_id, damage)
       GameEntityPlaySound(player_entity_id, "player/take_small_damage")
     end)
   else
-    -- 大ダメージのときは強制実行する
-    WaitFrame:updateWaitFrame(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), -1)
     WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
       GameEntityPlaySound(player_entity_id, "player/take_big_damage")
     end)
