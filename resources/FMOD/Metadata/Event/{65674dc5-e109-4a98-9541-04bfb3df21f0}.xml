@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{65674dc5-e109-4a98-9541-04bfb3df21f0}">
 		<property name="name">
-			<value>take_big_damage</value>
+			<value>heavy</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{73dd73df-7a60-497f-93be-fc6633708e9a}</destination>
+			<destination>{763b5002-35f8-49f0-a708-6a0ff4f9151c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{06d18b1a-a19a-4204-bf06-8db4f23676b1}</destination>

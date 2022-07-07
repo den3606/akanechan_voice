@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="EncodableAsset" id="{acbe3372-e76d-482c-ac77-d952d0d19bb2}">
+	<object class="EncodableAsset" id="{04c14b4c-8328-45ac-a315-6744b06588e1}">
 		<property name="assetPath">
-			<value>player/take_damage/on_fire/</value>
+			<value>player/take_damage/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{eb2a4d4a-1287-481b-8086-c8771a725107}</destination>

@@ -20,9 +20,10 @@
 {784a8eb4-d6d3-41cf-a997-8ecaa6251dab} event:/akanechan/player/kick
 {5f3332d1-3750-45b2-9fd2-b64f5b2f3498} event:/akanechan/player/pickup/wand
 {ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/player/spawn
-{65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_big_damage
-{d252bdf7-bf56-4d5d-a24c-3236fa47693b} event:/akanechan/player/take_fire_damage
-{c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/player/take_small_damage
+{65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_damage/heavy
+{7f8c1652-20b0-44fd-acf4-dbbcfcccde8b} event:/akanechan/player/take_damage/low_helth
+{c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/player/take_damage/mild
+{d252bdf7-bf56-4d5d-a24c-3236fa47693b} event:/akanechan/player/take_damage/on_fire
 {009538f3-683f-4283-a99a-dec498be1de6} event:/akanechan/player/throw/emerald_tablet
 {83676808-695d-45fd-92e3-c3b3e85f85eb} event:/akanechan/player/throw/something
 {2f99f806-4b51-4b0a-a879-566644591f29} parameter:/Migration Name Conflict (3)/lowpass

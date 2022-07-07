@@ -3,22 +3,31 @@ dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
 local BIG_DAMAGE = 0.8 -- 20
 
 local function playDamageSound(player_entity_id, damage)
-
-  if damage < BIG_DAMAGE then
+  local is_low_helth = math.floor(getPlayerHealth() / getPlayerMaxHealth() * 100) <= 20
+  p(math.floor(getPlayerHealth() / getPlayerMaxHealth() * 100))
+  if is_low_helth then
+    p("low_helth")
     WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
-      GameEntityPlaySound(player_entity_id, "player/take_small_damage")
+      GameEntityPlaySound(player_entity_id, "player/take_damage/low_helth")
+    end)
+  elseif damage < BIG_DAMAGE then
+    p("mild")
+    WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
+      GameEntityPlaySound(player_entity_id, "player/take_damage/mild")
     end)
   else
+    p("heavy")
     WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
-      GameEntityPlaySound(player_entity_id, "player/take_big_damage")
+      GameEntityPlaySound(player_entity_id, "player/take_damage/heavy")
     end)
   end
-
 end
+
+
 
 local function playFireDamageSound(player_entity_id)
   WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_FIRE_DAMAGE(), function()
-    GameEntityPlaySound(player_entity_id, "player/take_fire_damage")
+    GameEntityPlaySound(player_entity_id, "player/take_damage/on_fire")
   end, 60 * 3)
   WaitFrame:updateWaitFrame(player_entity_id, AKANECHAN:RECEIVED_FIRE_DAMAGE(), 60 * 3)
   WaitFrame:updateWaitFrame(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), 60 * 2)
