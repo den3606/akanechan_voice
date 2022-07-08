@@ -18,6 +18,14 @@ local content_filenames = {
     base="data/entities/items/books/base_book.xml",
     extend="mods/akanechan_voice/files/entities/extend_emerald_tablet_voices.xml"
   },
+  {
+    base="data/entities/items/pickup/heart_fullhp_temple.xml",
+    extend="mods/akanechan_voice/files/entities/extend_heart_fullhp_temple_voices.xml"
+  },
+  {
+    base="data/entities/items/pickup/spell_refresh.xml",
+    extend="mods/akanechan_voice/files/entities/extend_spell_refresh_voices.xml"
+  }
 }
 
 for _, content_filename in ipairs(content_filenames) do
