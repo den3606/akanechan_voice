@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{c98a2fd1-09a6-47b7-a361-b8cad7764bde}">
 		<property name="name">
-			<value>reflesher</value>
+			<value>refresher</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
