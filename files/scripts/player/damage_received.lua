@@ -26,7 +26,7 @@ end
 local function playDamageSound(player_entity_id, damage)
   for _, damage_model in ipairs(EntityGetComponent(player_entity_id, "DamageModelComponent") or {}) do
 
-    local is_low_helth = math.floor(getPlayerHealth() / getPlayerMaxHealth() * 100) <= 20
+    local is_low_helth = math.floor(getPlayerHealth() / getPlayerMaxHealth() * 100) <= 25
     local is_on_fire = ComponentGetValue2(damage_model, "is_on_fire")
     local take_big_damage = BIG_DAMAGE < damage
 
