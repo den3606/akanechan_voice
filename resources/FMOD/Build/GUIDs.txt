@@ -18,6 +18,8 @@
 {8e7396ac-11b0-43ab-9dfc-89dd2bba45eb} event:/akanechan/enemy/pickup/wand
 {39fd5b19-b7ac-469e-8862-baf88373cd64} event:/akanechan/player/dead
 {784a8eb4-d6d3-41cf-a997-8ecaa6251dab} event:/akanechan/player/kick
+{94462a59-9dea-42a8-b738-9853069151b7} event:/akanechan/player/pickup/health
+{c98a2fd1-09a6-47b7-a361-b8cad7764bde} event:/akanechan/player/pickup/reflesher
 {5f3332d1-3750-45b2-9fd2-b64f5b2f3498} event:/akanechan/player/pickup/wand
 {ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/player/spawn
 {65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_damage/heavy

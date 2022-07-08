@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{72607cfd-20e0-4a67-9eb4-a1755fee7d2c}">
+		<property name="assetPath">
+			<value>player/pcikup/health/20220708090959_琴葉 茜[嬉しい大]_次も気合い入れていこか-0.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.083673469387755</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{eb2a4d4a-1287-481b-8086-c8771a725107}</destination>
+		</relationship>
+	</object>
+</objects>
