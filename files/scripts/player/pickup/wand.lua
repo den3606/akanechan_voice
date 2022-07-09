@@ -42,7 +42,7 @@ function item_pickup(item_entity_id, pickupper_entity_id, item_name)
     local enemies = EntityGetInRadiusWithTag(x, y, 120, "enemy")
     for _, enemy_entity_id in ipairs(enemies) do
       if (enemy_entity_id == pickupper_entity_id) then
-        WaitFrame:tryCall(player_entity_id, AKANECHAN:PICKED_WAND(), function()
+        WaitFrame:tryCall(player_entity_id, AKANECHAN:ENEMY_PICKED_WAND(), function()
           playEnemyPickupSound(player_entity_id)
         end, 600)
       end
