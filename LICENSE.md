@@ -4,7 +4,7 @@
 
 - 参考
   - https://www.ai-j.jp/kotonoha/
-  - https://www.ai-j.jp/qa/q24 (4-2)
+  - https://www.ah-soft.com/licensee/voice_individual.html (4-2)
 
 # Noita関連のSourceに関して
 
