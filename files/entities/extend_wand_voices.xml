@@ -7,7 +7,7 @@
   ></AudioComponent>
 
   <LuaComponent
-    script_item_picked_up="mods/akanechan_voice/files/scripts/player/picked_up_wand.lua" >
+    script_item_picked_up="mods/akanechan_voice/files/scripts/player/pickup/wand.lua" >
   </LuaComponent>
   <LuaComponent
     script_throw_item="mods/akanechan_voice/files/scripts/player/throw_wand.lua" >

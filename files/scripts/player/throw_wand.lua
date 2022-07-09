@@ -7,10 +7,5 @@ function throw_item(from_x, from_y, to_x, to_y)
   else
     setInternalVariableValue(player_entity_id, AKANECHAN:IS_THROWED_WAND(), "value_bool", true)
   end
-
-  SetTimeOut(1, "mods/akanechan_voice/files/scripts/player/throw_wand.lua", "endOfThrowingTime")
-end
-
-function endOfThrowingTime()
-  setInternalVariableValue(player_entity_id, AKANECHAN:IS_THROWED_WAND(), "value_bool", false)
+  GameEntityPlaySound(player_entity_id, "player/throw/wand")
 end
