@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{94462a59-9dea-42a8-b738-9853069151b7}">
 		<property name="name">
-			<value>health</value>
+			<value>temple_health</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -90,7 +90,7 @@
 	<object class="MixerBusPanner" id="{716841fc-8c34-47c1-bb42-170784feb259}" />
 	<object class="MultiSound" id="{5d8b5ac7-9c22-4ca2-8dd7-746861841f54}">
 		<property name="length">
-			<value>1.6628162325138047</value>
+			<value>1.6031568980631863</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{49231cb6-0e33-433b-891c-dcf8442d3d09}</destination>
