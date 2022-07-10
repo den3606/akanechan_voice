@@ -7,6 +7,6 @@
   ></AudioComponent>
 
   <LuaComponent
-    script_item_picked_up="mods/akanechan_voice/files/scripts/player/pickup/health.lua" >
+    script_item_picked_up="mods/akanechan_voice/files/scripts/player/pickup/temple_health.lua" >
   </LuaComponent>
 </Entity>

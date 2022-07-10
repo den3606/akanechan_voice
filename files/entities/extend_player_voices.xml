@@ -1,57 +1,18 @@
 <Entity>
-  <AudioComponent
-    file="mods/akanechan_voice/files/audio/mod_voices.snd"
+  <AudioComponent file="mods/akanechan_voice/files/audio/mod_voices.snd"
     event_root="akanechan"
     audio_physics_material="character_player"
-    set_latest_event_position="1"
-  ></AudioComponent>
-  <LuaComponent
-    execute_on_added="1"
+    set_latest_event_position="1"></AudioComponent>
+
+  <LuaComponent execute_on_added="1"
     execute_every_n_frame="-1"
     remove_after_executed="1"
-		script_source_file="mods/akanechan_voice/files/scripts/player/init_voices.lua" >
-	</LuaComponent>
-
-  <LuaComponent
-    script_damage_received="mods/akanechan_voice/files/scripts/player/damage_received.lua" >
+    script_source_file="mods/akanechan_voice/files/scripts/player/spawn.lua">
   </LuaComponent>
 
-  <LuaComponent
-    script_kick="mods/akanechan_voice/files/scripts/player/kick.lua">
+  <LuaComponent script_damage_received="mods/akanechan_voice/files/scripts/player/damage_received.lua">
+  </LuaComponent>
+
+  <LuaComponent script_kick="mods/akanechan_voice/files/scripts/player/kick.lua">
   </LuaComponent>
 </Entity>
-<!-- メモ -->
-<!--
-    std::string             script_source_file                                              -                               ""
-    bool                    execute_on_added                                                0 [0, 1]                        ""
-    bool                    execute_on_removed                                              0 [0, 1]                        ""
-    int                     execute_every_n_frame                                           1 [1, 150]                      "1 = execute every frame. 2 = execute every second frame. 3 = execute every third frame and so on. -1 = execute only on add/remove/event"
-    int                     execute_times                                                   0 [0, 1]                        "How many times should the script be executed? < 1 means infinite"
-    bool                    remove_after_executed                                           0 [0, 1]                        ""
-    bool                    enable_coroutines                                               0 [0, 1]                        ""
-    bool                    call_init_function                                              0 [0, 1]                        " if 1, calls function init( entity_id:int ) after running the code in the file scope of script_source_file along with all mod appends. Does nothing if execute_on_added is 0"
-    std::string             script_enabled_changed                                          -                               "if set, calls function 'enabled_changed( entity_id:int, is_enabled:bool )' when the IsEnabled status of this LuaComponent is changed"
-    std::string             script_damage_received                                          -                               "if set, calls function 'damage_received( damage:number, message:string, entity_thats_responsible:int, is_fatal:bool, projectile_thats_responsible:int )' when we receive a message about damage (Message_DamageReceived)"
-    std::string             script_damage_about_to_be_received                              -                               "if set, calls function 'script_damage_about_to_be_received( damage:number, x:number, y:number, entity_thats_responsible:int, critical_hit_chance:int )' when we receive a message (Message_DamageAboutToBeReceived) -> new_damage:number,new_critical_hit_chance:int"
-    std::string             script_item_picked_up                                           -                               "if set, calls function 'item_pickup( int entity_item, int entity_pickupper, string item_name )' when message 'Message_ItemPickUp' is called"
-    std::string             script_shot                                                     -                               "if set, calls function 'shot( projectile_entity_id )' when we receive Message_Shot"
-    std::string             script_collision_trigger_hit                                    -                               "if set, calls function 'collision_trigger( colliding_entity_id )' when we receive Message_CollisionTriggerHit"
-    std::string             script_collision_trigger_timer_finished                         -                               "if set, calls function 'collision_trigger_timer_finished()' when we receive Message_CollisionTriggerTimerFinished"
-    std::string             script_physics_body_modified                                    -                               "if set, calls function 'physics_body_modified( is_destroyed )' when physics body has been modified"
-    std::string             script_pressure_plate_change                                    -                               "if set, calls function 'pressure_plate_change( new_state )' when PressurePlateComponent decides that things have change"
-    std::string             script_inhaled_material                                         -                               "if set, calls function 'inhaled_material( material_name, count )' once per second for each inhaled material"
-    std::string             script_death                                                    -                               "if set, calls function 'death( int damage_type_bit_field, string damage_message, int entity_thats_responsible, bool drop_items )' when we receive message Message_Death"
-    std::string             script_throw_item                                               -                               "if set, calls function 'throw_item( from_x, from_y, to_x, to_y )' when we receive message Message_ThrowItem"
-    std::string             script_material_area_checker_failed                             -                               "if set, calls function 'material_area_checker_failed( pos_x, pos_y, )' when we receive message Message_MaterialAreaCheckerFailed"
-    std::string             script_material_area_checker_success                            -                               "if set, calls function 'material_area_checker_success( pos_x, pos_y, )' when we receive message Message_MaterialAreaCheckerSuccess"
-    std::string             script_electricity_receiver_switched                            -                               "if set, calls function 'electricity_receiver_switched( bool is_electrified )' when we receive message Message_ElectricityReceiverSwitched"
-    std::string             script_electricity_receiver_electrified                         -                               "if set, calls function 'electricity_receiver_electrified()' when we receive message Message_ElectricityReceiverElectrified"
-    std::string             script_kick                                                     -                               "if set, calls function 'kick( entity_who_kicked )' when we receive message Message_Kick"
-    std::string             script_interacting                                              -                               "if set, calls function 'interacting( entity_who_interacted, entity_interacted, interactable_name )' when we receive message Message_Interaction"
-    std::string             script_audio_event_dead                                         -                               "if set, calls function 'audio_event_dead( bank_file, event_root )' when we receive message Message_AudioEventDead"
-    std::string             script_wand_fired                                               -                               "if set, calls function 'wand_fired( gun_entity_id )' when we receive Message_WandFired"
-    std::string             script_teleported                                               -                               "if set, calls function 'teleported( from_x, from_y, to_x, to_y, bool portal_teleport )' when we receive Message_Teleported"
-    std::string             script_portal_teleport_used                                     -                               "if set, calls function 'portal_teleport_used( entity_that_was_teleported, from_x, from_y, to_x, to_y )' when we receive Message_PortalTeleportUsed"
-    int                     mLastExecutionFrame                                             -1 [0, 1]                       ""
-    bool                    mModAppendsDone                                                 0 [0, 1]                        ""
--->
