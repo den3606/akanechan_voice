@@ -1,4 +1,4 @@
-<Entity name="start_voice">
+<Entity name="throw.item_voice">
   <AudioComponent file="mods/akanechan_voice/files/audio/mod_voices.snd"
     event_root="akanechan"
     audio_physics_material="character_player"
