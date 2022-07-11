@@ -70,6 +70,20 @@ SoundPlayer = {
     return nil
   end,
 
+  destroySoundPlayer = function(self, parent_entity_id, sound_player_name)
+    if parent_entity_id == nil then
+      return false
+    end
+
+    for _, child_entity_id in ipairs(EntityGetAllChildren(parent_entity_id)) do
+      if EntityGetName(child_entity_id) == sound_player_name then
+        EntityKill(child_entity_id)
+      end
+    end
+
+    return true
+  end,
+
   registerSoundEntity = function(self, sound_player_entity_id, xml_file_name)
     self:_registerSoundEntity(sound_player_entity_id, xml_file_name, nil)
   end,
