@@ -4,6 +4,9 @@
 
 ![茜ちゃんサムネ](workshop_preview_image.png)
 
+https://www.nicovideo.jp/watch/sm39991205
+https://www.youtube.com/watch?v=cndNWv3hwac
+
 ## Contributing
 
 手伝ってくれる場合、自分に連絡してもらえると助かります。
