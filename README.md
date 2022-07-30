@@ -11,4 +11,6 @@
 
 ## LICENSE
 
-[LICENSE.md](/LICENSE.md)
+- This MOD: [LICENSE](/LICENSE)
+- Voice: [docs/AI_VOICE_RULES.md]
+- Voice: [docs/NOITA_MOD_RULES.md]

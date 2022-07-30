@@ -1,14 +1,4 @@
-# 音声に関して
-
-利用規約等は琴葉茜・葵のガイドラインに準じます。
-
-- 参考
-  - https://www.ai-j.jp/kotonoha/
-  - https://www.ah-soft.com/licensee/voice_individual.html (4-2)
-
-# Noita関連のSourceに関して
-
-This repository is subject to the following license
+This repository is subject to the following rules.
 
 This document is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0/) license. The original version was published by [Greenheart Games](http://www.greenheartgames.com/) and prepared by [IDEALAW](http://www.idealaw.com.au). You can find the original version [here](http://files.greenheartgames.com/legal/GDT-Moddingv100.rtf). Appropriation of this document for your own cause may not be appropriate for your specific purposes, and is no substitute for professional legal advice. Use it at your own risk. You must keep this clause and attribution intact.
 
