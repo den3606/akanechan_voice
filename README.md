@@ -1,8 +1,12 @@
-# 茜ちゃんの声あてMOD
+# しゃべる！茜ちゃんMOD
 
 ウチがしゃべるでー！
 
 ![茜ちゃんサムネ](workshop_preview_image.png)
+
+https://www.nicovideo.jp/watch/sm39991205
+
+https://www.youtube.com/watch?v=cndNWv3hwac
 
 ## Contributing
 
@@ -12,5 +16,5 @@
 ## LICENSE
 
 - This MOD: [LICENSE](/LICENSE)
-- Voice: [docs/AI_VOICE_RULES.md]
-- Voice: [docs/NOITA_MOD_RULES.md]
+- Voice: [AI_VOICE_RULES](docs/AI_VOICE_RULES.md)
+- Noita MOD: [NOITA_MOD_RULES](docs/NOITA_MOD_RULES.md)
