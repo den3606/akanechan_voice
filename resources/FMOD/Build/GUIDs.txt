@@ -18,6 +18,7 @@
 {8e7396ac-11b0-43ab-9dfc-89dd2bba45eb} event:/akanechan/enemy/pickup/wand
 {fd468381-c98d-41be-9be3-09b5d255ccad} event:/akanechan/player/buy/temple_products
 {39fd5b19-b7ac-469e-8862-baf88373cd64} event:/akanechan/player/dead
+{3bc6e0aa-4740-4598-9830-294b308cd37e} event:/akanechan/player/fungal_shift
 {784a8eb4-d6d3-41cf-a997-8ecaa6251dab} event:/akanechan/player/kick
 {c98a2fd1-09a6-47b7-a361-b8cad7764bde} event:/akanechan/player/pickup/refresher
 {94462a59-9dea-42a8-b738-9853069151b7} event:/akanechan/player/pickup/temple_health

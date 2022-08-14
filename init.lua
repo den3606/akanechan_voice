@@ -28,5 +28,3 @@ function OnWorldPreUpdate()
 end
 
 print("akanechan_voice loaded")
-
-

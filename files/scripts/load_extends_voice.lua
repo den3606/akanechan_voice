@@ -34,3 +34,6 @@ for _, content_filename in ipairs(content_filenames) do
   xml:add_child(nxml.parse([[<Base file="]] .. content_filename["extend"] .. [[" />]]))
   ModTextFileSetContent(content_filename["base"], tostring(xml))
 end
+
+-- スクリプト依存(xml経由のEvent依存ではないもの)の拡張
+ModLuaFileAppend("data/scripts/magic/fungal_shift.lua", "mods/akanechan_voice/files/scripts/player/fungal_shift.lua")
