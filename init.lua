@@ -29,7 +29,7 @@ function OnWorldPreUpdate()
     return
   end
 
-  local current_player_entity = getPlayerEntity()
+  local current_player_entity = GetPlayerEntity()
   local is_transformed_player = current_player_entity ~= registered_entity_id and current_player_entity ~= nil
   ReregisterSoundPlayer(is_transformed_player, current_player_entity)
 
@@ -52,7 +52,7 @@ function ReregisterSoundPlayer(is_transformed_player, current_player_entity)
     SoundPlayer:destroySoundPlayer(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME)
     SoundPlayer:destroySoundPlayer(registered_entity_id, AKANECHAN.SOUND_PLAYER_NAME)
     AkanechanVoice = SoundPlayer:create(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME, AKANECHAN:SOUND_FILE_STORAGE_NAME())
-    registered_entity_id = getPlayerEntity()
+    registered_entity_id = GetPlayerEntity()
   end
 end
 
