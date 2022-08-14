@@ -10,5 +10,8 @@
     "init",
     "damage_received",
     "endOfThrowingTime"
+  ],
+  "cSpell.words": [
+    "NOITA"
   ]
 }
