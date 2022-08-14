@@ -23,6 +23,7 @@
 {c98a2fd1-09a6-47b7-a361-b8cad7764bde} event:/akanechan/player/pickup/refresher
 {94462a59-9dea-42a8-b738-9853069151b7} event:/akanechan/player/pickup/temple_health
 {5f3332d1-3750-45b2-9fd2-b64f5b2f3498} event:/akanechan/player/pickup/wand
+{18e0904e-2504-4ae2-809e-c2c56721449d} event:/akanechan/player/sheep
 {ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/player/spawn
 {65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_damage/heavy
 {7f8c1652-20b0-44fd-acf4-dbbcfcccde8b} event:/akanechan/player/take_damage/low_helth

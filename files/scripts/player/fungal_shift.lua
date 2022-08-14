@@ -4,7 +4,7 @@ dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
 -- main
 --------------
 local function fungal_shift_voice()
-  local akanechan_voice = SoundPlayer:seachSoundPlayer(getPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
+  local akanechan_voice = SoundPlayer:seachSoundPlayer(GetPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
   SoundPlayer:registerCoverSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/fungal_shift_voice.xml")
 end
 

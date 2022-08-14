@@ -8,8 +8,8 @@ end
 -- main
 --------------
 function item_pickup(item_entity_id, pickupper_entity_id, item_name)
-  local player_entity_id = getPlayerEntity()
-  local akanechan_voice = SoundPlayer:seachSoundPlayer(getPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
+  local player_entity_id = GetPlayerEntity()
+  local akanechan_voice = SoundPlayer:seachSoundPlayer(GetPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
 
   if player_entity_id == pickupper_entity_id then
     local is_shop_item = (EntityGetComponent(item_entity_id, "ItemCostComponent", "shop_cost") ~= nil)
