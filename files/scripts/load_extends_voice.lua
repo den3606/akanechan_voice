@@ -25,6 +25,10 @@ local content_filenames = {
   {
     base="data/entities/items/pickup/spell_refresh.xml",
     extend="mods/akanechan_voice/files/entities/extend_spell_refresh_voices.xml"
+  },
+  {
+    base="data/entities/particles/vomit.xml",
+    extend="mods/akanechan_voice/files/entities/extend_vomit_voices.xml"
   }
 }
 
