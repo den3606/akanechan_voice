@@ -1,9 +1,4 @@
 <Entity>
-  <AudioComponent file="mods/akanechan_voice/files/audio/mod_voices.snd"
-    event_root="akanechan"
-    audio_physics_material="character_player"
-    set_latest_event_position="1"></AudioComponent>
-
   <LuaComponent execute_on_added="1"
     execute_every_n_frame="-1"
     remove_after_executed="1"
