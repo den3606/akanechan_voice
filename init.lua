@@ -21,6 +21,7 @@ function OnPlayerSpawned(player_entity_id)
     -- spawn時にアクションを行いたいため、xml拡張ではなくentityに対しての代入となっている
     EntityLoadToEntity("mods/akanechan_voice/files/entities/extend_player_voices.xml", player_entity_id)
     addNewInternalVariable(player_entity_id, "akanechan_voice.loaded?", "value_bool", true)
+    addNewInternalVariable(player_entity_id, AKANECHAN.CURRENT_LOCATION, "value_string", AKANECHAN.BIOME_LOCATIONS.START_POINT)
   end
 end
 
@@ -31,13 +32,19 @@ function OnWorldPreUpdate()
 
   local current_player_entity = GetPlayerEntity()
   local is_transformed_player = current_player_entity ~= registered_entity_id and current_player_entity ~= nil
-  ReregisterSoundPlayer(is_transformed_player, current_player_entity)
 
-  if is_transformed_player and FindSheepPlayer() then
-    dofile('mods/akanechan_voice/files/scripts/player/sheep.lua')
+  if is_transformed_player then
+    ReregisterSoundPlayer(is_transformed_player, current_player_entity)
+    addNewInternalVariable(current_player_entity, AKANECHAN.CURRENT_LOCATION, "value_string", BiomeMapGetName())
+
+    if FindSheepPlayer() then
+      dofile('mods/akanechan_voice/files/scripts/player/sheep.lua')
+    end
   end
 
   if AkanechanVoice ~= nil then
+    setInternalVariableValue(current_player_entity, AKANECHAN.CURRENT_LOCATION, "value_string", BiomeMapGetName())
+    dofile('mods/akanechan_voice/files/scripts/player/enter_new_biome.lua')
     SoundPlayer:playSound(AkanechanVoice)
   end
 
@@ -47,13 +54,11 @@ function OnPlayerDied()
   is_player_dead = true
 end
 
-function ReregisterSoundPlayer(is_transformed_player, current_player_entity)
-  if is_transformed_player then
-    SoundPlayer:destroySoundPlayer(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME)
-    SoundPlayer:destroySoundPlayer(registered_entity_id, AKANECHAN.SOUND_PLAYER_NAME)
-    AkanechanVoice = SoundPlayer:create(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME, AKANECHAN:SOUND_FILE_STORAGE_NAME())
-    registered_entity_id = GetPlayerEntity()
-  end
+function ReregisterSoundPlayer(current_player_entity)
+  SoundPlayer:destroySoundPlayer(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME)
+  SoundPlayer:destroySoundPlayer(registered_entity_id, AKANECHAN.SOUND_PLAYER_NAME)
+  AkanechanVoice = SoundPlayer:create(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME, AKANECHAN:SOUND_FILE_STORAGE_NAME())
+  registered_entity_id = GetPlayerEntity()
 end
 
 print("akanechan_voice loaded")
