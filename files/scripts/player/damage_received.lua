@@ -10,6 +10,11 @@ local function playDamageSound(player_entity_id, akanechan_voice, damage)
     local take_big_damage = BIG_DAMAGE < damage
     local is_heal = damage < 0
 
+    if is_heal then
+      -- TODO: 回復用音声を追加する
+      return
+    end
+
     if is_on_fire then
       if take_big_damage then
         SoundPlayer:registerForceSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/heavy_damage_voice.xml")
@@ -20,12 +25,16 @@ local function playDamageSound(player_entity_id, akanechan_voice, damage)
       end
     elseif is_low_helth then
       WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
-        SoundPlayer:registerCoverSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/low_helth_damage_voice.xml")
+        SetRandomSeed(GameGetFrameNum(), GameGetFrameNum())
+        local rnd = Random(1, 20)
+        if rnd == 4 then
+          SoundPlayer:registerForceSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/low_helth_damage_long_voice.xml")
+        else
+          SoundPlayer:registerCoverSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/low_helth_damage_voice.xml")
+        end
       end, 60 * 1)
     elseif take_big_damage then
       SoundPlayer:registerCoverSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/heavy_damage_voice.xml")
-    elseif is_heal then
-      -- TODO: 回復用音声を追加する
     else
       WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
         SoundPlayer:registerCoverSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/mild_damage_voice.xml")
