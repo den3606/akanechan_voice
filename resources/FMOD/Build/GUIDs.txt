@@ -27,6 +27,7 @@
 {ce13fec0-e96a-40d6-aa44-4f57000ee4b2} event:/akanechan/player/spawn
 {65674dc5-e109-4a98-9541-04bfb3df21f0} event:/akanechan/player/take_damage/heavy
 {7f8c1652-20b0-44fd-acf4-dbbcfcccde8b} event:/akanechan/player/take_damage/low_helth
+{d2434162-e6d4-47c8-8fad-582ab7371ad5} event:/akanechan/player/take_damage/low_helth_long
 {c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/player/take_damage/mild
 {d252bdf7-bf56-4d5d-a24c-3236fa47693b} event:/akanechan/player/take_damage/on_fire
 {009538f3-683f-4283-a99a-dec498be1de6} event:/akanechan/player/throw/emerald_tablet
