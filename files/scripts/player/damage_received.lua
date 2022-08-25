@@ -11,7 +11,9 @@ local function playDamageSound(player_entity_id, akanechan_voice, damage)
     local is_heal = damage < 0
 
     if is_heal then
-      -- TODO: 回復用音声を追加する
+      WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_HEAL(), function()
+        SoundPlayer:registerOnlyEmptySoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/heal_voice.xml")
+      end, 60 * 10)
       return
     end
 
