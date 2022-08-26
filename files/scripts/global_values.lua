@@ -1,6 +1,8 @@
 AKANECHAN = {
   SOUND_PLAYER_NAME = "akanechan_voice",
   CURRENT_LOCATION = "current_location",
+  VISITED_BIOME = function(self) return self.SOUND_PLAYER_NAME .. "." .. "visited_biome" end,
+  ENTER_NEW_BIOME = function(self) return self.SOUND_PLAYER_NAME .. "." .. "enter_new_biome" end,
   SOUND_FILE_STORAGE_NAME = function(self) return self.SOUND_PLAYER_NAME .. "." .. "sound_xml_file" end,
   RECEIVED_DAMAGE = function(self) return self.SOUND_PLAYER_NAME .. "." .. "received_damage" end,
   RECEIVED_FIRE_DAMAGE = function(self) return self.SOUND_PLAYER_NAME .. "." .. "received_fire_damage" end,

@@ -1,5 +1,7 @@
 dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
 dofile_once("mods/akanechan_voice/files/scripts/global_values.lua")
+dofile_once("mods/akanechan_voice/files/scripts/biome_visit_record.lua")
+
 print("akanechan_voice load")
 
 local registered_entity_id = nil
@@ -23,6 +25,8 @@ function OnPlayerSpawned(player_entity_id)
     EntityLoadToEntity("mods/akanechan_voice/files/entities/extend_player_voices.xml", player_entity_id)
     addNewInternalVariable(player_entity_id, "akanechan_voice.loaded?", "value_bool", true)
     addNewInternalVariable(player_entity_id, AKANECHAN.CURRENT_LOCATION, "value_string", AKANECHAN.BIOME_LOCATIONS.START_POINT)
+    InitVisitedBiomes()
+    RegisterEnterNewBiome(AkanechanVoice)
   end
 end
 
@@ -35,7 +39,8 @@ function OnWorldPreUpdate()
   local is_transformed_player = current_player_entity ~= registered_entity_id and current_player_entity ~= nil
 
   if is_transformed_player then
-    ReregisterSoundPlayer(is_transformed_player, current_player_entity)
+    ReregisterSoundPlayer(current_player_entity)
+    RegisterEnterNewBiome(AkanechanVoice)
     addNewInternalVariable(current_player_entity, AKANECHAN.CURRENT_LOCATION, "value_string", BiomeMapGetName())
 
     if FindSheepPlayer() then
@@ -45,7 +50,6 @@ function OnWorldPreUpdate()
 
   if AkanechanVoice ~= nil then
     setInternalVariableValue(current_player_entity, AKANECHAN.CURRENT_LOCATION, "value_string", BiomeMapGetName())
-    dofile('mods/akanechan_voice/files/scripts/player/enter_new_biome.lua')
     SoundPlayer:playSound(AkanechanVoice)
   end
 
@@ -60,6 +64,13 @@ function ReregisterSoundPlayer(current_player_entity)
   SoundPlayer:destroySoundPlayer(registered_entity_id, AKANECHAN.SOUND_PLAYER_NAME)
   AkanechanVoice = SoundPlayer:create(current_player_entity, AKANECHAN.SOUND_PLAYER_NAME, AKANECHAN:SOUND_FILE_STORAGE_NAME())
   registered_entity_id = GetPlayerEntity()
+end
+
+function RegisterEnterNewBiome(entity_id)
+  EntityAddComponent2(entity_id, "LuaComponent", {
+    script_source_file = "mods/akanechan_voice/files/scripts/player/enter_new_biome.lua",
+    execute_every_n_frame = 60,
+  })
 end
 
 print("akanechan_voice loaded")
