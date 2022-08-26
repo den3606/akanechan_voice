@@ -1,4 +1,5 @@
 dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
+dofile_once("mods/akanechan_voice/files/scripts/global_values.lua")
 
 local function playEnemyPickupSound(player_entity_id)
   GameEntityPlaySound(player_entity_id, "enemy/pickup/wand")

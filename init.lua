@@ -1,4 +1,5 @@
 dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
+dofile_once("mods/akanechan_voice/files/scripts/global_values.lua")
 print("akanechan_voice load")
 
 local registered_entity_id = nil

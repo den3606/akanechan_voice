@@ -1,4 +1,5 @@
 dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
+dofile_once("mods/akanechan_voice/files/scripts/global_values.lua")
 local function enter_to_starting_point(akanechan_voice)
   print("start")
   SoundPlayer:registerForceSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/sheep_voice.xml")
