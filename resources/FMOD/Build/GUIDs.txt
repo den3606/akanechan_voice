@@ -18,6 +18,15 @@
 {8e7396ac-11b0-43ab-9dfc-89dd2bba45eb} event:/akanechan/enemy/pickup/wand
 {fd468381-c98d-41be-9be3-09b5d255ccad} event:/akanechan/player/buy/temple_products
 {39fd5b19-b7ac-469e-8862-baf88373cd64} event:/akanechan/player/dead
+{2daea56a-75f8-4643-af61-50005cf1bcb2} event:/akanechan/player/enter_new_biome/coalmine
+{b0e51b12-6645-4c1a-97e2-142759dc321b} event:/akanechan/player/enter_new_biome/crypt
+{88381337-7529-4484-b362-4509bbe6ce3c} event:/akanechan/player/enter_new_biome/excavationsite
+{7070efea-dc44-4abe-a1b8-d25dfc32adba} event:/akanechan/player/enter_new_biome/fun
+{c559a074-2d93-4c71-b598-f9d0fc8256c0} event:/akanechan/player/enter_new_biome/gold
+{c12a85ed-77da-48ad-a397-4e7f58d57d2c} event:/akanechan/player/enter_new_biome/rainforest
+{d115a7c0-044c-458f-8cf2-aabf4307d82e} event:/akanechan/player/enter_new_biome/snowcastle
+{e3b4a87b-130f-45f3-9ebf-b7180ab42bf0} event:/akanechan/player/enter_new_biome/snowcave
+{16d87c97-fb52-4159-90c1-58d4cf453cd7} event:/akanechan/player/enter_new_biome/vault
 {3bc6e0aa-4740-4598-9830-294b308cd37e} event:/akanechan/player/fungal_shift
 {09ef12da-c1a3-49d5-a241-b07bd483c546} event:/akanechan/player/heal
 {784a8eb4-d6d3-41cf-a997-8ecaa6251dab} event:/akanechan/player/kick
