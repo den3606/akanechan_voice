@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{2b53568b-370b-47c3-8005-28076868b751}">
 		<property name="assetPath">
-			<value>20220828092752_琴葉 茜[標準]_ここが噂のしげるっぽいな-0.wav</value>
+			<value>player/enter_new_biome/overgrown_cavern/20220828092752_琴葉 茜[標準]_ここが噂のしげるっぽいな-0.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

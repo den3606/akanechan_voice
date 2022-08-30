@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{dd0e228d-4fa4-474a-9175-b85fea318778}">
 		<property name="assetPath">
-			<value>player/enter_new_biome/20220826234423_琴葉 茜[標準]_3層目やな-0.wav</value>
+			<value>player/enter_new_biome/snowcave/20220826234423_琴葉 茜[標準]_3層目やな-0.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

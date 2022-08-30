@@ -16,6 +16,7 @@
 {8340afee-1bfb-481c-8b65-a1721703356c} bus:/reverb
 {40bdfd79-5dfd-4303-8a71-0792c637c380} bus:/ui
 {8e7396ac-11b0-43ab-9dfc-89dd2bba45eb} event:/akanechan/enemy/pickup/wand
+{aca3fabf-45b1-4135-bd38-d406e5137a64} event:/akanechan/player/blindness
 {fd468381-c98d-41be-9be3-09b5d255ccad} event:/akanechan/player/buy/temple_products
 {39fd5b19-b7ac-469e-8862-baf88373cd64} event:/akanechan/player/dead
 {2daea56a-75f8-4643-af61-50005cf1bcb2} event:/akanechan/player/enter_new_biome/coalmine
@@ -28,8 +29,10 @@
 {e3b4a87b-130f-45f3-9ebf-b7180ab42bf0} event:/akanechan/player/enter_new_biome/snowcave
 {16d87c97-fb52-4159-90c1-58d4cf453cd7} event:/akanechan/player/enter_new_biome/vault
 {3bc6e0aa-4740-4598-9830-294b308cd37e} event:/akanechan/player/fungal_shift
+{3204301c-2454-4fa6-ab18-1b6afcb6fe9b} event:/akanechan/player/fungal_tripping
 {09ef12da-c1a3-49d5-a241-b07bd483c546} event:/akanechan/player/heal
 {784a8eb4-d6d3-41cf-a997-8ecaa6251dab} event:/akanechan/player/kick
+{753d243f-e7f4-4bbd-bed6-5e6e374f9ac1} event:/akanechan/player/neutralized
 {c98a2fd1-09a6-47b7-a361-b8cad7764bde} event:/akanechan/player/pickup/refresher
 {94462a59-9dea-42a8-b738-9853069151b7} event:/akanechan/player/pickup/temple_health
 {5f3332d1-3750-45b2-9fd2-b64f5b2f3498} event:/akanechan/player/pickup/wand
@@ -40,10 +43,14 @@
 {d2434162-e6d4-47c8-8fad-582ab7371ad5} event:/akanechan/player/take_damage/low_helth_long
 {c268b8e7-0182-4a36-9315-db5d7fc46136} event:/akanechan/player/take_damage/mild
 {d252bdf7-bf56-4d5d-a24c-3236fa47693b} event:/akanechan/player/take_damage/on_fire
+{f881da9f-db3c-4be1-aed7-bc0569764e2a} event:/akanechan/player/take_damage/on_poison
+{b0d5a316-4b76-46ed-af99-591363f7dd5c} event:/akanechan/player/take_damage/on_radioactive
 {009538f3-683f-4283-a99a-dec498be1de6} event:/akanechan/player/throw/emerald_tablet
 {83676808-695d-45fd-92e3-c3b3e85f85eb} event:/akanechan/player/throw/something
 {ffedda58-1a02-421c-926a-5b13e11d36f7} event:/akanechan/player/throw/wand
+{789c46bc-2de8-44a0-8845-b365943686a0} event:/akanechan/player/twitchy
 {ce2cef71-323f-4a3b-87a3-c69e3a8e15ec} event:/akanechan/player/vomit
+{3da0b789-79e0-4978-bb3d-53d43e71ba6c} event:/akanechan/player/weaken
 {2f99f806-4b51-4b0a-a879-566644591f29} parameter:/Migration Name Conflict (3)/lowpass
 {ddf75d16-bdbe-4460-908b-0a29bd483835} parameter:/lowpass
 {dadeda7a-c13b-484b-929e-d3c513e7173b} snapshot:/cave
