@@ -1,0 +1,15 @@
+<Entity name="damage_received.on_poison_damage_voice">
+  <AudioComponent file="mods/akanechan_voice/files/audio/mod_voices.snd"
+    event_root="akanechan"
+    audio_physics_material="character_player"
+    set_latest_event_position="1"
+    remove_latest_event_on_destroyed="1"
+    send_message_on_event_dead="1"
+    >
+  </AudioComponent>
+  <LuaComponent execute_on_added="1"
+    execute_every_n_frame="-1"
+    script_source_file="mods/akanechan_voice/files/scripts/sounds/damage_received/on_poison_damage_voice.lua"
+    script_audio_event_dead="mods/akanechan_voice/files/scripts/sounds/damage_received/on_poison_damage_voice.lua">
+  </LuaComponent>
+</Entity>

@@ -1,0 +1,6 @@
+<Entity>
+  <LuaComponent
+    script_source_file="mods/akanechan_voice/files/scripts/player/tripping.lua"
+		execute_every_n_frame="600"
+  ></LuaComponent>
+</Entity>

@@ -5,8 +5,8 @@ WaitFrame = {
   },
 
   removeRegister = function(self, entity_id, variable_name)
-    setInternalVariableValue(entity_id, variable_name .. self.SUFFIXES["wait_frame"], "value_int", 0)
-    setInternalVariableValue(entity_id, variable_name .. self.SUFFIXES["register_frame"], "value_int", 0)
+    removeInternalVariableValue(entity_id, variable_name .. self.SUFFIXES["wait_frame"], "value_int")
+    removeInternalVariableValue(entity_id, variable_name .. self.SUFFIXES["register_frame"], "value_int")
   end,
 
   canCall = function(self, entity_id, variable_name)
@@ -36,8 +36,8 @@ WaitFrame = {
   updateWaitFrame = function(self, entity_id, variable_name, wait_frame)
     local current_frame = GameGetFrameNum()
     local register_frame = current_frame
-    addNewInternalVariable(entity_id, variable_name .. self.SUFFIXES["wait_frame"], "value_int", wait_frame)
-    addNewInternalVariable(entity_id, variable_name .. self.SUFFIXES["register_frame"], "value_int", register_frame)
+    setInternalVariableValue(entity_id, variable_name .. self.SUFFIXES["wait_frame"], "value_int", wait_frame)
+    setInternalVariableValue(entity_id, variable_name .. self.SUFFIXES["register_frame"], "value_int", register_frame)
   end,
 
   registered = function(self, entity_id, variable_name)

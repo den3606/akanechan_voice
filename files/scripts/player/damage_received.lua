@@ -1,12 +1,15 @@
 dofile_once("mods/akanechan_voice/files/scripts/lib/utilities.lua")
+dofile_once("mods/akanechan_voice/files/scripts/global_values.lua")
 
 local BIG_DAMAGE = 0.8 -- 20
 
-local function playDamageSound(player_entity_id, akanechan_voice, damage)
+local function playDamageSound(player_entity_id, akanechan_voice, damage, damaged_by)
   for _, damage_model in ipairs(EntityGetComponent(player_entity_id, "DamageModelComponent") or {}) do
 
     local is_low_helth = math.floor(GetPlayerHealth() / GetPlayerMaxHealth() * 100) <= 25
     local is_on_fire = ComponentGetValue2(damage_model, "is_on_fire")
+    local is_on_radioactive = (damaged_by == "$damage_radioactive") -- 猛毒ヘドロ
+    local is_on_poison  = (damaged_by == "$damage_poison") -- 猛毒
     local take_big_damage = BIG_DAMAGE < damage
     local is_heal = damage < 0
 
@@ -17,6 +20,21 @@ local function playDamageSound(player_entity_id, akanechan_voice, damage)
       return
     end
 
+    if is_on_radioactive then
+      WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_RADIOACTIVE_DAMAGE(), function()
+        SoundPlayer:registerOnlyEmptySoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/on_radioactive_damage_voice.xml")
+      end, 60 * 15)
+      return
+    end
+
+    if is_on_poison then
+      WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_POISON_DAMAGE(), function()
+        SoundPlayer:registerOnlyEmptySoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/on_poison_damage_voice.xml")
+      end, 60 * 15)
+      return
+    end
+
+
     if is_on_fire then
       if take_big_damage then
         SoundPlayer:registerForceSoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/heavy_damage_voice.xml")
@@ -25,7 +43,10 @@ local function playDamageSound(player_entity_id, akanechan_voice, damage)
           SoundPlayer:registerOnlyEmptySoundEntity(akanechan_voice, "mods/akanechan_voice/files/entities/sounds/damage_received/on_fire_damage_voice.xml")
         end, 60 * 4)
       end
-    elseif is_low_helth then
+      return
+    end
+
+    if is_low_helth then
       WaitFrame:tryCall(player_entity_id, AKANECHAN:RECEIVED_DAMAGE(), function()
         SetRandomSeed(GameGetFrameNum(), GameGetFrameNum())
         local rnd = Random(1, 20)
@@ -49,7 +70,8 @@ end
 --------------
 -- main
 --------------
-function damage_received(damage, desc, entity_who_caused, is_fatal)
+function damage_received(damage, damaged_by, entity_who_caused, is_fatal)
+  p('damage')
   local player_entity_id = GetUpdatedEntityID()
   local akanechan_voice = SoundPlayer:seachSoundPlayer(GetPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
   if is_fatal then
@@ -57,6 +79,6 @@ function damage_received(damage, desc, entity_who_caused, is_fatal)
     -- 死亡ボイスは必ず流したいため、直接callする
     GameEntityPlaySound(GetUpdatedEntityID(), "player/dead")
   else
-    playDamageSound(player_entity_id, akanechan_voice, damage)
+    playDamageSound(player_entity_id, akanechan_voice, damage, damaged_by)
   end
 end
