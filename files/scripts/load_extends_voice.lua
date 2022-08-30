@@ -34,6 +34,22 @@ local content_filenames = {
     base="data/entities/misc/effect_trip_03.xml",
     extend="mods/akanechan_voice/files/entities/extend_tripping_voices.xml"
   },
+  {
+    base="data/entities/misc/effect_blindness.xml",
+    extend="mods/akanechan_voice/files/entities/extend_effect_blindness_voices.xml"
+  },
+  {
+    base="data/entities/misc/effect_twitchy.xml",
+    extend="mods/akanechan_voice/files/entities/extend_effect_twitchy_voices.xml"
+  },
+  {
+    base="data/entities/misc/effect_weaken.xml",
+    extend="mods/akanechan_voice/files/entities/extend_effect_weaken_voices.xml"
+  },
+  {
+    base="data/entities/misc/neutralized.xml",
+    extend="mods/akanechan_voice/files/entities/extend_effect_neutralized_voices.xml"
+  },
 }
 
 for _, content_filename in ipairs(content_filenames) do
