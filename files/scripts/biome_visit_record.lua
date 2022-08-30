@@ -138,7 +138,6 @@ local biome = {
 
 function InitVisitedBiomes()
   local visited_biome_serialized = Json.encode(biome)
-  print(visited_biome_serialized)
   GlobalsSetValue(AKANECHAN:VISITED_BIOME(), visited_biome_serialized)
 end
 
