@@ -29,7 +29,11 @@ local content_filenames = {
   {
     base="data/entities/particles/vomit.xml",
     extend="mods/akanechan_voice/files/entities/extend_vomit_voices.xml"
-  }
+  },
+  {
+    base="data/entities/misc/effect_trip_03.xml",
+    extend="mods/akanechan_voice/files/entities/extend_tripping_voices.xml"
+  },
 }
 
 for _, content_filename in ipairs(content_filenames) do
