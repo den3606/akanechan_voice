@@ -71,7 +71,6 @@ end
 -- main
 --------------
 function damage_received(damage, damaged_by, entity_who_caused, is_fatal)
-  p('damage')
   local player_entity_id = GetUpdatedEntityID()
   local akanechan_voice = SoundPlayer:seachSoundPlayer(GetPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
   if is_fatal then
