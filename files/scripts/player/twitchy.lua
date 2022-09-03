@@ -4,7 +4,10 @@ dofile_once("mods/akanechan_voice/files/scripts/global_values.lua")
 --------------
 -- main
 --------------
-if GetUpdatedEntityID() ~= GetPlayerEntity() then
+print(EntityGetName(EntityGetParent(GetUpdatedEntityID())))
+print(EntityGetName(GetPlayerEntity()))
+
+if EntityGetParent(GetUpdatedEntityID()) ~= GetPlayerEntity() then
   return
 end
 local akanechan_voice = SoundPlayer:seachSoundPlayer(GetPlayerEntity(), AKANECHAN.SOUND_PLAYER_NAME)
