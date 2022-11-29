@@ -22,7 +22,7 @@ function OnPlayerSpawned(player_entity_id)
   local loaded = getInternalVariableValue(player_entity_id, "akanechan_voice.loaded?", "value_bool") or false
   if not loaded then
     -- spawn時にアクションを行いたいため、xml拡張ではなくentityに対しての代入となっている
-    EntityLoadToEntity("mods/akanechan_voice/files/entities/extend_player_voices.xml", player_entity_id)
+    EntityLoadToEntity("mods/akanechan_voice/files/entities/extends/extend_player_voices.xml", player_entity_id)
     addNewInternalVariable(player_entity_id, "akanechan_voice.loaded?", "value_bool", true)
     addNewInternalVariable(player_entity_id, AKANECHAN.CURRENT_LOCATION, "value_string", AKANECHAN.BIOME_LOCATIONS.START_POINT)
     InitVisitedBiomes()

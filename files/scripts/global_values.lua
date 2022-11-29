@@ -46,6 +46,12 @@ AKANECHAN = {
     WINTER = "$biome_winter", -- 雪の荒地
     FUN = "$biome_fun", -- 生い茂った洞窟
     ROBOBASE = "$biome_robobase"  -- 発電所
+  },
+  EFFECT_TAGS = {
+    BLINDNESS = "akanechan_effect_blindness",
+    NEUTRALIZED = "akanechan_effect_neutralized",
+    TWITCHY = "akanechan_effect_twitchy",
+    WEAKEN = "akanechan_effect_weaken",
   }
 }
 
