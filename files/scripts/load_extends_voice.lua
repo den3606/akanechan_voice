@@ -4,51 +4,51 @@ local nxml = dofile_once("mods/akanechan_voice/files/scripts/lib/luanxml/nxml.lu
 local content_filenames = {
   {
     base="data/entities/base_wand_pickup.xml",
-    extend="mods/akanechan_voice/files/entities/extend_wand_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_wand_voices.xml"
   },
   {
     base="data/entities/base_item.xml",
-    extend="mods/akanechan_voice/files/entities/extend_item_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_item_voices.xml"
   },
   {
     base="data/entities/items/pickup/potion.xml",
-    extend="mods/akanechan_voice/files/entities/extend_item_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_item_voices.xml"
   },
   {
     base="data/entities/items/books/base_book.xml",
-    extend="mods/akanechan_voice/files/entities/extend_emerald_tablet_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_emerald_tablet_voices.xml"
   },
   {
     base="data/entities/items/pickup/heart_fullhp_temple.xml",
-    extend="mods/akanechan_voice/files/entities/extend_heart_fullhp_temple_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_heart_fullhp_temple_voices.xml"
   },
   {
     base="data/entities/items/pickup/spell_refresh.xml",
-    extend="mods/akanechan_voice/files/entities/extend_spell_refresh_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_spell_refresh_voices.xml"
   },
   {
     base="data/entities/particles/vomit.xml",
-    extend="mods/akanechan_voice/files/entities/extend_vomit_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_vomit_voices.xml"
   },
   {
     base="data/entities/misc/effect_trip_03.xml",
-    extend="mods/akanechan_voice/files/entities/extend_tripping_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_tripping_voices.xml"
   },
   {
     base="data/entities/misc/effect_blindness.xml",
-    extend="mods/akanechan_voice/files/entities/extend_effect_blindness_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_effect_blindness_voices.xml"
   },
   {
     base="data/entities/misc/effect_twitchy.xml",
-    extend="mods/akanechan_voice/files/entities/extend_effect_twitchy_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_effect_twitchy_voices.xml"
   },
   {
     base="data/entities/misc/effect_weaken.xml",
-    extend="mods/akanechan_voice/files/entities/extend_effect_weaken_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_effect_weaken_voices.xml"
   },
   {
     base="data/entities/misc/neutralized.xml",
-    extend="mods/akanechan_voice/files/entities/extend_effect_neutralized_voices.xml"
+    extend="mods/akanechan_voice/files/entities/extends/extend_effect_neutralized_voices.xml"
   },
 }
 
